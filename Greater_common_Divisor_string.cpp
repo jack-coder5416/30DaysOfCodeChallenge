@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define max(a,b) a>b?a:b
+#define min(a,b) a<b?a:b
+#define O cout<<
+#define I cin>>
+#define f0(i,n) for(int i=0;i<n;i++)
+#define f1(i,n) for(int i=1;i<n;i++)
+#define speed_karo ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+#define ll  long long
+#define lli  long long
+#define ff first
+#define ss second
+#define vecs(v) sort(v.begin(),v.end())
+#define be  v.begin(),v.end()
+int inclusion(int n,int a,int b){
+  int c1 = n/a;
+  int c2 = n/b; 
+  int c3 = n/(a*b);
+  return c1+c2-c3;  
+}
+void inputv(vector<int> &v){
+  for(auto &i : v){
+      cin>>i;
+  }
+}
+void outputv(vector<int> &v){
+  for(auto i : v){
+      cout<<i;
+  }
+}
+///-------------------------CODE BY JATIN------------------------
+ 
+ 
+void codeJ(){
+ 
+}
+string GCD_String(string s1,string s2){
+ return s1+s2==s2+s1?s1.substr(0,__gcd(s1.size(),s2.size())):"";
+
+}
+//int32_t main(){
+int main(){
+string s1,s2;
+cin>>s1>>s2;
+cout<<GCD_String(s1,s2);
+
+return 0;
+}
